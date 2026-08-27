@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile: 360px;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #111827;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
