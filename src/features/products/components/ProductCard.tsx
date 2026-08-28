@@ -54,7 +54,7 @@ export default function ProductCard({
 
   return (
     <div
-      className="flex flex-col w-full h-full rounded-xl border border-gray-300 bg-white overflow-hidden
+      className="flex flex-col w-full h-full rounded-2xl border border-gray-300 bg-white overflow-hidden
                  transition-shadow duration-150
                  dark:bg-neutral-900 dark:border-neutral-800"
     >

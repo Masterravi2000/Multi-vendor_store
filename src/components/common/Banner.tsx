@@ -2,7 +2,7 @@ import banner from "../../assets/store_banner2.jfif"
 
 export default function Banner() {
   return (
-    <div className="w-full bg-white mb-5 rounded-lg overflow-hidden">
+    <div className="w-full bg-white mb-5 overflow-hidden">
       <img
         src={banner}
         alt="Delivery Banner"
