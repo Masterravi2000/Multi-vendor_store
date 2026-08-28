@@ -8,6 +8,7 @@ import Category from "../components/common/Category";
 import { useState } from "react";
 import Banner from "../components/common/Banner";
 import Header from "../components/common/Header";
+import BottomNavBar from "../components/common/BottomNavBar";
 
 const CATEGORIES = [
   "All",
@@ -42,6 +43,7 @@ export default function Catalog() {
       {/* Banner section */}
       <Banner />
 
+      {/* Main body */}
       <div className="w-full flex p-2 flex-col">
         {/* Category component */}
         <div className="w-full mb-4">
@@ -76,6 +78,9 @@ export default function Catalog() {
           )}
         </div>
       </div>
+
+      {/* Bottom Nav Bar */}
+      <BottomNavBar />
     </div>
   );
 }
