@@ -1,32 +1,102 @@
 [
   {
-    "id": "p1", 
-    "store_id": "s1", 
-    "store_name": "Ramu Mart", 
-    "name": "Fresh Milk", 
-    "category": "Dairy", 
-    "price": 45, 
+    "id": "p1",
+    "store_id": "s1",
+    "store_name": "Ramu Mart",
+    "name": "Fresh Milk",
+    "category": "Dairy",
+    "price": 45,
     "unit": "500 ml",
     "imageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=80"
   },
   {
-    "id": "p2", 
-    "store_id": "s2", 
-    "store_name": "Krishna Dairy", 
-    "name": "Fresh Milk", 
-    "category": "Dairy", 
-    "price": 48, 
+    "id": "p2",
+    "store_id": "s2",
+    "store_name": "Krishna Dairy",
+    "name": "Fresh Milk",
+    "category": "Dairy",
+    "price": 48,
     "unit": "500 ml",
     "imageUrl": "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=400&q=80"
   },
   {
-    "id": "p3", 
-    "store_id": "s1", 
-    "store_name": "Ramu Mart", 
-    "name": "Organic Spices", 
-    "category": "Groceries", 
-    "price": 120, 
-    "unit": "1 kg",
+    "id": "p3",
+    "store_id": "s1",
+    "store_name": "Ramu Mart",
+    "name": "Organic Spices",
+    "category": "Groceries",
+    "price": 120,
+    "unit": "250 g",
     "imageUrl": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p9",
+    "store_id": "s5",
+    "store_name": "Glow & Glam",
+    "name": "Hydrating Face Serum",
+    "category": "Beauty",
+    "price": 499,
+    "unit": "30 ml",
+    "imageUrl": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p4",
+    "store_id": "s3",
+    "store_name": "Green Grocers",
+    "name": "Farm Fresh Tomatoes",
+    "category": "Vegetables",
+    "price": 40,
+    "unit": "1 kg",
+    "imageUrl": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p7",
+    "store_id": "s2",
+    "store_name": "Krishna Dairy",
+    "name": "Whole Wheat Bread",
+    "category": "Bakery",
+    "price": 45,
+    "unit": "1 Loaf",
+    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p10",
+    "store_id": "s5",
+    "store_name": "Glow & Glam",
+    "name": "Matte Liquid Lipstick",
+    "category": "Beauty",
+    "price": 299,
+    "unit": "4 ml",
+    "imageUrl": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p5",
+    "store_id": "s3",
+    "store_name": "Green Grocers",
+    "name": "Ripe Bananas",
+    "category": "Fruits",
+    "price": 60,
+    "unit": "1 Dozen",
+    "imageUrl": "https://images.unsplash.com/photo-1571501478200-85f269a919cb?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p6",
+    "store_id": "s4",
+    "store_name": "Daily Needs",
+    "name": "Potato Chips",
+    "category": "Snacks",
+    "price": 50,
+    "unit": "150 g",
+    "imageUrl": "https://images.unsplash.com/photo-1566478989037-e924e50cb792?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "id": "p8",
+    "store_id": "s1",
+    "store_name": "Ramu Mart",
+    "name": "Premium Basmati Rice",
+    "category": "Groceries",
+    "price": 850,
+    "unit": "5 kg",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e8ac?auto=format&fit=crop&w=400&q=80"
   }
 ]

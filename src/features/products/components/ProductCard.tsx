@@ -24,7 +24,6 @@ export default function ProductCard({
   quantity = 0, // Now directly controlled by parent
   maxQuantity,
   onQuantityChange,
-  onCardClick,
 }: ProductCardProps) {
   const [imageError, setImageError] = useState<boolean>(false);
 
@@ -91,7 +90,7 @@ export default function ProductCard({
         </p>
 
         {/* Price + Action Row */}
-        <div className="mt-auto flex items-center justify-between gap-2">
+        <div className=" flex items-center justify-between gap-2">
           <span className="text-xl sm:text-base font-bold text-gray-900 dark:text-neutral-100">
             {currencySymbol}
             {price}
@@ -101,39 +100,34 @@ export default function ProductCard({
             <button
               type="button"
               onClick={handleAdd}
-              className="rounded-lg bg-gray-900 text-white text-xs sm:text-sm font-medium
-                         px-4.5 py-1.5 sm:px-4 sm:py-2 transition-colors hover:bg-gray-800
-                         active:scale-95"
+              className="rounded-lg bg-gray-900 font-medium
+                         px-4.5 h-7.5 transition-colors hover:bg-gray-800 flex justify-center items-center"
             >
-              Add
+              <span className="font-semibold text-white sm:text-md text-xs">Add</span>
             </button>
           ) : (
-            <div className="flex items-center gap-1 rounded-lg border border-gray-600 p-1">
+            <div className="flex h-7.5 items-center gap-1 rounded-lg border border-gray-600 p-1">
               <button
                 type="button"
                 onClick={handleDecrement}
-                className="w-6 h-4.5 sm:w-7 sm:h-7 flex items-center justify-center rounded-md
-                           text-green-700 dark:text-green-500 hover:bg-gray-50 
-                           dark:hover:bg-green-900/30 active:scale-90"
+                className="px-1.5 py-1 flex items-center justify-center rounded-md hover:bg-gray-50"
               >
                 <Minus
-                  className="w-3.5 h-3.5 text-gray-800 sm:w-4 sm:h-4"
+                  className="w-3 h-3 text-gray-700 sm:w-4 sm:h-4"
                   strokeWidth={2.5}
                 />
               </button>
-              <span className="min-w-[1rem] text-center text-xs sm:text-sm font-medium text-gray-900 dark:text-neutral-100">
+              <span className="min-w-[1rem] text-center text-xs sm:text-sm font-medium text-gray-700">
                 {quantity}
               </span>
               <button
                 type="button"
                 onClick={handleIncrement}
                 disabled={isMaxed}
-                className="w-6 h-4.5 sm:w-7 sm:h-7 flex items-center justify-center rounded-md
-                           text-green-700 dark:text-green-500 hover:bg-gray-50 
-                           dark:hover:bg-green-900/30 active:scale-90 disabled:opacity-40"
+                className="px-1.5 py-1 flex items-center justify-center rounded-md hover:bg-gray-50"
               >
                 <Plus
-                  className="w-3.5 text-gray-800 h-3.5 sm:w-4 sm:h-4"
+                  className="w-3 text-gray-700 h-3 sm:w-4 sm:h-4"
                   strokeWidth={2.5}
                 />
               </button>
