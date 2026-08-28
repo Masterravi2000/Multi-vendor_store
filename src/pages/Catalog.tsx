@@ -9,6 +9,7 @@ import { useState } from "react";
 import Banner from "../components/common/Banner";
 import Header from "../components/common/Header";
 import BottomNavBar from "../components/common/BottomNavBar";
+import CartPage from "./CartPage";
 
 const CATEGORIES = [
   "All",
@@ -22,6 +23,7 @@ const CATEGORIES = [
 export default function Catalog() {
   const dispatch = useDispatch();
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [currentView, setCurrentView] = useState<"catalog" | "cart">("catalog");
   const cartItems = useSelector((state: RootState) => state.cart.items);
 
   // Derive the current quantity from Redux state
@@ -35,10 +37,15 @@ export default function Catalog() {
     return product.category.toLowerCase() === selectedCategory.toLowerCase();
   });
 
+  // Render Cart Page if view is set to 'cart'
+  if (currentView === "cart") {
+    return <CartPage onBack={() => setCurrentView("catalog")} />;
+  }
+
   return (
     <div className="pb-24 bg-gray-50 h-[100dvh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
       {/* Header section */}
-      <Header />
+      <Header onCartClick={() => setCurrentView("cart")} />
 
       {/* Banner section */}
       <Banner />
@@ -80,7 +87,7 @@ export default function Catalog() {
       </div>
 
       {/* Bottom Nav Bar */}
-      <BottomNavBar />
+      <BottomNavBar onCheckoutClick={() => setCurrentView("cart")} />
     </div>
   );
 }

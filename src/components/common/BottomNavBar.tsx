@@ -2,7 +2,11 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../../app/store";
 import { ArrowRight } from "lucide-react";
 
-export default function BottomNavBar() {
+interface BottomNavBarProps {
+  onCheckoutClick: () => void;
+}
+
+export default function BottomNavBar({ onCheckoutClick }: BottomNavBarProps) {
   const cartItems = useSelector((state: RootState) => state.cart.items);
 
   // Calculate total items and total price
@@ -25,6 +29,7 @@ export default function BottomNavBar() {
 
       <button
         type="button"
+        onClick={onCheckoutClick}
         className="flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm sm:text-sm font-semibold hover:bg-gray-800"
       >
         <span>Proceed to Checkout</span>
